@@ -1,0 +1,103 @@
+.title {
+    background-color: #e4f2f9;
+    font-size: 40px;
+    
+    padding: 20px;
+    text-align: center;
+    color: #00698c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.Event-and-Date {
+    display : flex;
+    flex-direction: row;
+}
+.Event,
+.date {
+    display: flex;
+    flex-direction: row; /* Stack label above dropdown */
+    align-items: flex-start; /* Align to the left */
+    gap: 5px; /* Adjust the gap between the label and the dropdown */
+    margin-right: 20px;
+    justify-content: space-between;
+}
+
+.label {
+    font-size: 20px;
+    color: black;
+
+}
+.label2 {
+    font-size: 20px;
+    color: black;
+    position: relative;
+    left: 50%;
+
+}
+
+
+.dropdown-button,
+.date-dropdown select {
+    background-color: white;
+    border: 1px solid #d1d1d1;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    width: 100px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.date-dropdown {
+    display: flex;
+    gap: 10px;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+.event-date-container {
+    display: flex;
+    gap: 20px;
+}
+.shift-right {
+    margin-left: auto;
+    /* Styles for the item that should be shifted to the right */
+  }
+  .shift-center {
+    position: absolute; /* Positions it absolutely within the title container */
+    left: 50%; /* Moves the left edge to the center of the container */
+    transform: translateX(-50%); /* Adjusts it to the exact center */
+    text-align: center; /* Centers text inside this div */
+}
+  
+
